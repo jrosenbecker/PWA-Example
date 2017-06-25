@@ -5,7 +5,8 @@ module.exports = {
   context: path.resolve(__dirname, "./"),
   entry: {
     app: path.resolve("scripts/script.js"),
-    styles: path.resolve("css/app.css")
+    styles: path.resolve("css/app.css"),
+    serviceWorker: path.resolve("serviceWorker.js")
   },
   module: {
     rules: [

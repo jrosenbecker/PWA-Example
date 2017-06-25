@@ -4,6 +4,7 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+// Set a timer to change the image that gets returned every few seconds
 var imageNumber = 1;
 setInterval(() => {
     if(++imageNumber > 5) {
@@ -24,6 +25,10 @@ app.get('/', (request, response) => {
 app.get('/changing-image', (request, response) => {
     response.sendFile(path.resolve(`images/Puppy-${imageNumber}.jpg`));
 });
+
+app.get('/serviceWorker.js', (request, response) => {
+    response.sendFile(path.resolve('dist/serviceWorker.bundle.js'));
+})
 
 // start  the server on the proper port
 app.listen(port, (err) => {

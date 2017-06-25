@@ -1,5 +1,10 @@
 @import '/node_modules/materialize-css/dist/css/materialize.css';
 
-.color {
-    color: red;
+.caching-strategy-image {
+    width:100%;
+    max-height:400px;
+}
+
+.image-compare-container {
+    margin-top:10px;
 }
