@@ -60,7 +60,8 @@ self.addEventListener('fetch', event => {
                 event.respondWith(fetch(event.request));
         }
     } else {
-        event.respondWith(networkFirst(event.request));
+        event.respondWith(cacheFirst(event.request));
+        event.waitUntil(updateCache(clonedRequest));
     }
 });
 
