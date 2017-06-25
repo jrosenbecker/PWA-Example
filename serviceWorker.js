@@ -52,6 +52,9 @@ self.addEventListener('fetch', event => {
             case 'networkFirst':
                 event.respondWith(networkFirst(event.request));
                 break;
+            case 'backgroundUpdate':
+                event.respondWith(cacheFirst(event.request));
+                event.waitUntil(updateCache(clonedRequest));
             default:
                 event.respondWith(fetch(event.request));
         }

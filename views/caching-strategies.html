@@ -22,11 +22,11 @@
                         <p>Always use the cached data if it is available</p>
                         <div class="row image-compare-container">
                             <div class="col s6">
-                                <p>Using the network</p>
+                                <p>Network only</p>
                                 <img class="caching-strategy-image" src="/changing-image?cachingStrategy=none">
                             </div>
                             <div class="col s6">
-                                <p>Using the cache</p>
+                                <p>Cache first caching</p>
                                 <img class="caching-strategy-image" src="/changing-image?cachingStrategy=cacheFirst">
                             </div>
                         </div>
@@ -42,12 +42,31 @@
                         <p>Use the network if available. If it is not, then use the cached data</p>
                         <div class="row image-compare-container">
                             <div class="col s6">
-                                <p>Using the network</p>
+                                <p>Network only</p>
                                 <img class="caching-strategy-image" src="/changing-image?cachingStrategy=none">
                             </div>
                             <div class="col s6">
-                                <p>Using the cache</p>
+                                <p>Network first caching</p>
                                 <img class="caching-strategy-image" src="/changing-image?cachingStrategy=networkFirst">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Cache First, Background Update</span>
+                        <p>Always return cached data if it is available, but then update the cache with a network request in the background</p>
+                        <div class="row image-compare-container">
+                            <div class="col s6">
+                                <p>Network only</p>
+                                <img class="caching-strategy-image" src="/changing-image?cachingStrategy=none">
+                            </div>
+                            <div class="col s6">
+                                <p>Background update</p>
+                                <img class="caching-strategy-image" src="/changing-image?cachingStrategy=backgroundUpdate">
                             </div>
                         </div>
                     </div>
