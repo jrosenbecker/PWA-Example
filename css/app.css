@@ -1,0 +1,5 @@
+@import '/node_modules/materialize-css/dist/css/materialize.css';
+
+.color {
+    color: red;
+}
