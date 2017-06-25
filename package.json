@@ -22,8 +22,10 @@
   },
   "dependencies": {
     "express": "^4.15.3",
+    "material-icons": "^0.1.0",
     "materialize": "^1.0.0",
     "materialize-css": "^0.99.0",
+    "materialize-js": "^1.0.0",
     "url-parse": "^1.1.9"
   }
 }
