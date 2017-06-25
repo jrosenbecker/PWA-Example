@@ -69,7 +69,7 @@ function cacheFirst(request) {
             }
 
             // If the cached response is not found, use the network and update the cache
-            updateCache(request).then(response => {
+            return updateCache(request).then(response => {
                 return response;
             });
         }
@@ -112,8 +112,9 @@ function updateCache(request) {
         // If the fetch is successful, put the response in the cache
         var fetchResponse = response.clone();
         if (fetchResponse.status === 200) {
-            putResponseInCache(request, response);
+            putResponseInCache(request, fetchResponse);
         }
+        return response;
     }).catch(requestError => {
         // Log if the fetch fails (i.e. you're offline)
         console.log('Cache update failed');
