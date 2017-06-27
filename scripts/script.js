@@ -1,5 +1,3 @@
-import path from 'path';
-
 if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/serviceWorker.js')
         .then(

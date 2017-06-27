@@ -5,6 +5,7 @@ module.exports = {
   context: path.resolve(__dirname, "./"),
   entry: {
     app: path.resolve("scripts/script.js"),
+    backgroundSync: path.resolve("scripts/backgroundSync.js"),
     styles: path.resolve("css/app.css"),
     serviceWorker: path.resolve("serviceWorker.js")
   },

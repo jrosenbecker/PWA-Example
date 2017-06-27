@@ -2,11 +2,20 @@
 
 <head>
     <title>PWA Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d47a1">
+    <meta name="theme-color" content="#0d47a1">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--<link rel="stylesheet" href="/css/app.css" />-->
     <script type="text/javascript" src="/dist/styles.bundle.js"></script>
     <script type="text/javascript" src="/dist/app.bundle.js"></script>
-    
+
 </head>
 
 <body>
@@ -16,8 +25,9 @@
             <a href="/" class="button left arrow-icon"><i class="mi mi-arrow-back"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a class="collection-item" href="/caching-strategies.html">Caching Strategies</a></li>
-                <li><a class="collection-item" href="/push-notifications.html">Push Notifications</a></li>
-                <li><a class="collection-item" href="/web-share-api.html">Web Share API</a></li>
+                <!--<li><a class="collection-item" href="/push-notifications.html">Push Notifications</a></li>
+                <li><a class="collection-item" href="/web-share-api.html">Web Share API</a></li>-->
+                <li><a class="collection-item" href="/background-sync.html"></a></li>
             </ul>
         </div>
     </nav>
@@ -41,8 +51,8 @@
                     </div>
                 </div>
             </div>
-        
-        
+
+
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-content">
@@ -66,7 +76,8 @@
                 <div class="card">
                     <div class="card-content">
                         <span class="card-title">Cache First, Background Update</span>
-                        <p>Always return cached data if it is available, but then update the cache with a network request in the background</p>
+                        <p>Always return cached data if it is available, but then update the cache with a network request in
+                            the background</p>
                         <div class="row image-compare-container">
                             <div class="col s6">
                                 <p>Network only</p>
@@ -82,7 +93,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>
