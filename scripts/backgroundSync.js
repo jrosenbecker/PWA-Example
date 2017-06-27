@@ -34,6 +34,8 @@ $(window.document).ready(() => {
                     // post the message normally if service workers and syncing are not supported
                     return postMessage(messageObject);
                 }
+            }).then(() => {
+                $('#message').val('');
             })
         });
     }
