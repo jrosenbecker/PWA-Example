@@ -1,6 +1,8 @@
 # PWA-Example
 A small application for use in displaying how a progressive web app and service workers function
 
+[See the hosted example here!](https://rosenbecker-pwa-example.herokuapp.com)
+
 ## Installation
 1. Clone the repository
 2. Make sure Node & NPM are installed
