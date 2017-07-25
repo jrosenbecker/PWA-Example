@@ -3,7 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = process.env.PORT || 3000;
+app.set('port', (process.env.PORT || 3000));
 
 // Set a timer to change the image that gets returned every few seconds
 var imageNumber = 1;
@@ -46,10 +46,10 @@ app.post('/post-message', (request, response) => {
 })
 
 // start  the server on the proper port
-app.listen(port, (err) => {
+app.listen(app.get('port'), (err) => {
     if(err) {
         return console.log('An error occurred', err);
     }
 
-    console.log(`Server is listening on ${port}`)
+    console.log(`Server is listening on ${app.get('port')}`)
 });
