@@ -4,6 +4,18 @@ const bodyParser = require('body-parser');
 
 const app = express();
 app.set('port', (process.env.PORT || 3000));
+var env = process.env.NODE_ENV || 'development';
+
+var forceSsl = function (req, res, next) {
+    if (req.headers['x-forwarded-proto'] !== 'https') {
+        return res.redirect(['https://', req.get('Host'), req.url].join(''));
+    }
+    return next();
+};
+
+if (env === 'production') {
+    app.use(forceSsl);
+}
 
 // Set a timer to change the image that gets returned every few seconds
 var imageNumber = 1;
