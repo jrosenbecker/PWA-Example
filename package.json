@@ -30,5 +30,6 @@
     "materialize-css": "^0.99.0",
     "materialize-js": "^1.0.0",
     "url-parse": "^1.1.9"
-  }
+  },
+  "heroku-postbuild": "webpack"
 }
