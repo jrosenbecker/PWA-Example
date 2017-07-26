@@ -2,15 +2,12 @@ var parse = require('url-parse');
 var idbKeyval = require('idb-keyval');
 
 const VERSION = '1';
-const CACHE_NAME = `demo-pwa-${VERSION}`;
+const CACHE_NAME = `root-cache-${VERSION}`;
 
 var urlsToCache = [
     '/',
-    '/caching-strategies.html',
-    '/background-sync.html',
     '/dist/app.bundle.js',
     '/dist/styles.bundle.js',
-    '/dist/backgroundSync.bundle.js',
     '/node_modules/materialize-css/dist/css/materialize.css',
     'https://fonts.googleapis.com/icon?family=Material+Icons',
     '/apple-touch-icon.png',

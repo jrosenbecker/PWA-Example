@@ -4,10 +4,12 @@ const webpack = require("webpack");
 module.exports = {
   context: path.resolve(__dirname, "./"),
   entry: {
-    app: path.resolve("scripts/script.js"),
+    app: path.resolve("scripts/index.js"),
     backgroundSync: path.resolve("scripts/backgroundSync.js"),
     styles: path.resolve("css/app.css"),
-    serviceWorker: path.resolve("serviceWorker.js")
+    serviceWorker: path.resolve("service-workers/serviceWorker.js"),
+    cachingSW: path.resolve("service-workers/cachingSW.js"),
+    backgroundSyncSW: path.resolve("service-workers/backgroundSyncSW.js")
   },
   module: {
     rules: [
