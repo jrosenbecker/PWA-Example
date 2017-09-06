@@ -1,7 +1,9 @@
 # PWA-Example
 A small application for use in displaying how a progressive web app and service workers function
 
-[See the hosted example here!](https://rosenbecker-pwa-example.herokuapp.com)
+[Link to powerpoint presentation](https://drive.google.com/file/d/0B1CZXhrCmM-sZXJBX3A5VGtUamM/view?usp=sharing)
+
+[See the hosted example here!](https://pwa.joerosenbecker.com)
 
 ## Installation
 1. Clone the repository
